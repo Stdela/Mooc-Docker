@@ -1,0 +1,5 @@
+sh -c 'echo "Input website:"; read website; echo "Searching.."; sleep 1; curl http://$website;'
+docker exec -it 31 bash
+apt-get update && apt-get install curl
+helsinki.fi
+
