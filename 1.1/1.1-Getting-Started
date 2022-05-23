@@ -1,0 +1,5 @@
+docker run -d nginx
+docker run -d nginx
+docker run -d nginx 
+docker stop 1c
+docker stop 81
