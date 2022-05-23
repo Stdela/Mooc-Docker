@@ -1,0 +1,4 @@
+docker rm c1Name
+docker rm c2Name
+docker rm c3Name
+docker rmi nginx
