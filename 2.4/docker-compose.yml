@@ -1,0 +1,21 @@
+version: '3.8'
+services:
+  backend:
+    build: 
+      context: ../1.12/material-applications/example-backend/
+    environment:
+      - REDIS_HOST=redis
+    ports:
+        - 8080:8080
+  frontend:
+    build: 
+      context: ../1.12/material-applications/example-frontend/
+    ports:
+        - 5000:5000
+  redis:
+    image: redis
+    volumes:
+        - /usr/src/app/
+    #command: ["-d","redis-server" ,"--save","60","1"]
+
+  
